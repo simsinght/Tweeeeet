@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/TwitterClient.swift"
+            timestampString = "509976861.744042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.__deallocating_deinit"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.569539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.init (token : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, secret : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, expiration : Swift.ImplicitlyUnwrappedOptional&lt;Foundation.Date&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.571186"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "222">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.__allocating_init (token : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, secret : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;, expiration : Swift.ImplicitlyUnwrappedOptional&lt;Foundation.Date&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.572736"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.init (queryString : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.574615"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "99">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.__allocating_init (queryString : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;) -&gt; Swift.ImplicitlyUnwrappedOptional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.576144"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.init () -&gt; CodePathTweeeeet.TwitterClient"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.578132"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.__allocating_init () -&gt; CodePathTweeeeet.TwitterClient"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.579853"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.581553"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TwitterClient.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CodePathTweeeeet.TwitterClient&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TwitterClient.swift"
+                  timestampString = "509974800.583144"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/tweetCell.swift"
+            timestampString = "510039718.951404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/TwitterClient.swift"
+            timestampString = "510021610.446663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "logout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/tweetCell.swift"
+            timestampString = "510029035.629215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "tweetCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
