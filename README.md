@@ -59,9 +59,9 @@ Sorry it's late. Didn't have time to start until today.
     See the License for the specific language governing permissions and
     limitations under the License.
     
-# Project 5 - *Name of App Here*
+# Project 5 - *Tweeeeet*
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
