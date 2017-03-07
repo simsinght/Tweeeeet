@@ -35,7 +35,7 @@ class TweetDetailsViewController: UIViewController {
         userPFImageView.setImageWith((tweet?.pfImageURL!)!)
         
         userNameLabel.text = tweet?.userName
-        userHandleLabel.text = tweet?.userHandle
+        userHandleLabel.text = "@" + (tweet?.userHandle)!
         
         timestampLabel.text = String(describing: (tweet?.timestamp)!)
         
@@ -54,6 +54,81 @@ class TweetDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onReplyButton(_ sender: Any) {
+        
+        let next:ComposeTweetViewController = storyboard?.instantiateViewController(withIdentifier: "compose") as! ComposeTweetViewController
+        
+        next.startText = userHandleLabel.text!
+        print("breaks before reaching here?")
+        
+        self.navigationController?.present(next, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func onRetweetButton(_ sender: Any) {
+        if(tweet?.retweeted)!{
+            TwitterClient.sharedInstance?.unretweet(id: (tweet?.id)!, success: { (response: NSDictionary) in
+                // self.tweet.favCount = response["favourites_count"] as! Int
+                self.tweet?.rtCount = response["retweet_count"] as! Int
+                
+                self.rtImageView.image = #imageLiteral(resourceName: "retweet-black")
+                self.retweetsCountLabel.text = "" + String(describing: self.tweet?.rtCount)
+                self.tweet?.retweeted = false
+            }, failure: { (error: Error) in
+                print("error while unretweeting: \(error.localizedDescription)")
+            })
+            
+        } else {
+            TwitterClient.sharedInstance?.retweet(id: (tweet?.id)!, success: { (response: NSDictionary) in
+                self.tweet?.rtCount = response["retweet_count"] as! Int
+                
+                
+                self.rtImageView.image = #imageLiteral(resourceName: "retweet-blue")
+                //self.favortiesCountLabel.text = "" + String(describing: self.tweet?.favCount)
+                self.retweetsCountLabel.text = "" + String(describing: self.tweet?.rtCount)
+                self.tweet?.retweeted = true
+            }, failure: { (error: Error) in
+                print("error while retweeting: \(error.localizedDescription)")
+            })
+        }
+    }
+    
+    @IBAction func onFavoriteButton(_ sender: Any) {
+        if(tweet?.favorited)!{
+            TwitterClient.sharedInstance?.unfavorite(id: (tweet?.id)!, success: { (response: NSDictionary) in
+                // let user = response["user"] as? NSDictionary
+                // self.tweet.favCount = user?["favourites_count"] as! Int
+                self.tweet?.rtCount = response["retweet_count"] as! Int
+                
+                self.tweet?.favCount -= 1
+                self.favImageView.image = #imageLiteral(resourceName: "heart-black")
+                //self.favortiesCountLabel.text = String(describing: self.tweet?.favCount)
+                //self.retweetsCountLabel.text = String(describing: self.tweet?.rtCount)
+                self.tweet?.favorited = false
+            }, failure: { (error: Error) in
+                print("error while unfavoriting: \(error.localizedDescription)")
+            })
+            
+        } else {
+            
+            TwitterClient.sharedInstance?.favorite(id: (tweet?.id)!, success: { (response: NSDictionary) in
+                // let user = response["user"] as? NSDictionary
+                // self.tweet.favCount = user?["favourites_count"] as! Int
+                self.tweet?.rtCount = response["retweet_count"] as! Int
+                
+                self.tweet?.favCount += 1
+                self.favImageView.image = #imageLiteral(resourceName: "heart-red")
+                //self.favortiesCountLabel.text = String(describing: self.tweet?.favCount)
+                //self.retweetsCountLabel.text = String(describing: self.tweet?.rtCount)
+                self.tweet?.favorited = true
+            }, failure: { (error: Error) in
+                print("error while favoriting: \(error.localizedDescription)")
+            })
+            
+            
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

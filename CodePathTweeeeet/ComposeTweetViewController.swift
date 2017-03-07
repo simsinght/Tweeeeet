@@ -12,13 +12,15 @@ class ComposeTweetViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var tweetTextViewInput: UITextView!
     
+    var startText: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tweetTextViewInput.delegate = self
         _ = tweetTextViewInput.delegate?.textViewShouldBeginEditing!(tweetTextViewInput)
         
-        
+        tweetTextViewInput.text = startText
         // Do any additional setup after loading the view.
     }
 
@@ -40,6 +42,8 @@ class ComposeTweetViewController: UIViewController, UITextViewDelegate {
         let urlReq = tweetTextViewInput.text
         let urlNew = urlReq?.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
         
+        print(urlNew ?? "nothing?")
+        
         TwitterClient.sharedInstance?.tweet(status: urlNew!, success: { (NSDictionary) in
             print("running out of time")
         }, failure: { (Error) in
@@ -48,6 +52,8 @@ class ComposeTweetViewController: UIViewController, UITextViewDelegate {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
     /*
     // MARK: - Navigation

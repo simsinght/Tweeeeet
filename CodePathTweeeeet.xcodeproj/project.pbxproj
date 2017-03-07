@@ -15,6 +15,8 @@
 		232007E51E66929F0060F2DA /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232007E41E66929F0060F2DA /* TweetsViewController.swift */; };
 		232292F91E6E6D5E000863E6 /* TweetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232292F81E6E6D5E000863E6 /* TweetDetailsViewController.swift */; };
 		232292FB1E6E8E68000863E6 /* ComposeTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232292FA1E6E8E68000863E6 /* ComposeTweetViewController.swift */; };
+		232292FD1E6EDEBF000863E6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232292FC1E6EDEBF000863E6 /* ProfileViewController.swift */; };
+		232292FF1E6EE44F000863E6 /* userTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232292FE1E6EE44F000863E6 /* userTableViewCell.swift */; };
 		23B0D63E1E65526500D20AFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B0D63D1E65526500D20AFB /* AppDelegate.swift */; };
 		23B0D6401E65526500D20AFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B0D63F1E65526500D20AFB /* ViewController.swift */; };
 		23B0D6431E65526500D20AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B0D6411E65526500D20AFB /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		232007E41E66929F0060F2DA /* TweetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
 		232292F81E6E6D5E000863E6 /* TweetDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailsViewController.swift; sourceTree = "<group>"; };
 		232292FA1E6E8E68000863E6 /* ComposeTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTweetViewController.swift; sourceTree = "<group>"; };
+		232292FC1E6EDEBF000863E6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		232292FE1E6EE44F000863E6 /* userTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userTableViewCell.swift; sourceTree = "<group>"; };
 		23B0D63A1E65526500D20AFB /* CodePathTweeeeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePathTweeeeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B0D63D1E65526500D20AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B0D63F1E65526500D20AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				232007E41E66929F0060F2DA /* TweetsViewController.swift */,
 				232292F81E6E6D5E000863E6 /* TweetDetailsViewController.swift */,
 				232292FA1E6E8E68000863E6 /* ComposeTweetViewController.swift */,
+				232292FC1E6EDEBF000863E6 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				232007E21E65B0330060F2DA /* tweetCell.swift */,
+				232292FE1E6EE44F000863E6 /* userTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -273,7 +279,9 @@
 				232007D51E6581000060F2DA /* Tweet.swift in Sources */,
 				232007CE1E655E7C0060F2DA /* LoginViewController.swift in Sources */,
 				232292F91E6E6D5E000863E6 /* TweetDetailsViewController.swift in Sources */,
+				232292FD1E6EDEBF000863E6 /* ProfileViewController.swift in Sources */,
 				232007E31E65B0330060F2DA /* tweetCell.swift in Sources */,
+				232292FF1E6EE44F000863E6 /* userTableViewCell.swift in Sources */,
 				23B0D6401E65526500D20AFB /* ViewController.swift in Sources */,
 				232007DB1E6598CF0060F2DA /* TwitterClient.swift in Sources */,
 				23B0D63E1E65526500D20AFB /* AppDelegate.swift in Sources */,

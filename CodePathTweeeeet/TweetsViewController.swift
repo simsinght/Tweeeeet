@@ -8,11 +8,16 @@
 
 import UIKit
 
-class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+
+class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, tweetsCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     var tweets = [Tweet]()
+    
+    var refreshControl: UIRefreshControl?
+    var tempUDict: NSDictionary?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,11 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
+        
+        // Initialize a UIRefreshControl
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refreshControlAction(refreshControl:)), for: UIControlEvents.valueChanged)
+        tableView.insertSubview(refreshControl!, at: 0)
         
         client?.homeTimeline(success: { (tweets: [Tweet]) in
             self.tweets = tweets
@@ -53,8 +63,8 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell") as! tweetCell
         
-       cell.tweet = tweets[indexPath.row]
-        
+        cell.tweet = tweets[indexPath.row]
+        cell.delegate = self
         return cell
     }
     
@@ -65,6 +75,32 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }, failure: { (error: Error) in
             print(error.localizedDescription)
         })
+    }
+    
+    // Makes a network request to get updated data
+    // Updates the tableView with the new data
+    // Hides the RefreshControl
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        TwitterClient.sharedInstance?.homeTimeline(success: { (tweets: [Tweet]) in
+            self.tweets = tweets
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
+        }, failure: { (error: Error) in
+            print(error.localizedDescription)
+        })
+    }
+    
+    
+    func tweetCellDelegate(userDict: NSDictionary) {
+        tempUDict = userDict
+        print("function called")
+        
+        let next:ProfileViewController = storyboard?.instantiateViewController(withIdentifier: "userProfile") as! ProfileViewController
+        next.userDict = self.tempUDict
+        print("breaks before reaching here?")
+        
+        self.navigationController?.show(next, sender: nil)
+
     }
 
     
@@ -86,6 +122,12 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let tweetDetailsViewController = segue.destination as! TweetDetailsViewController
             
             tweetDetailsViewController.tweet = tweet
+        }
+        
+        else if sender == nil {
+            print("prepare - sender nil")
+            let controller = segue.destination as! ProfileViewController
+            controller.userDict = self.tempUDict
         }
         
     }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+@objc protocol tweetsCellDelegate {
+    @objc optional func tweetCellDelegate( userDict: NSDictionary )
+}
+
 class tweetCell: UITableViewCell {
 
     @IBOutlet weak var tweetTextLabel: UILabel!
@@ -17,6 +21,8 @@ class tweetCell: UITableViewCell {
     @IBOutlet weak var userPFImageView: UIImageView!
     @IBOutlet weak var rtImageView: UIImageView!
     @IBOutlet weak var favImageView: UIImageView!
+    
+    weak var delegate: tweetsCellDelegate?
     
     var tweet: Tweet! {
         didSet{
@@ -108,6 +114,20 @@ class tweetCell: UITableViewCell {
         
     }
     
+    
+    @IBAction func onPFRetweet(_ sender: Any) {
+        onRetweetButton(sender)
+    }
+    
+    @IBAction func onPFFavorite(_ sender: Any) {
+        onFavoriteButton(sender)
+    }
+    
+    
+    @IBAction func onUserImageButton(_ sender: Any) {
+        print("pressed")
+        delegate?.tweetCellDelegate!(userDict: tweet.user!)
+    }
     
     
 
