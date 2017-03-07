@@ -202,5 +202,130 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/TweetDetailsViewController.swift"
+            timestampString = "510553627.29981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "TweetDetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TweetDetailsViewController.__deallocating_deinit"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TweetDetailsViewController.swift"
+                  timestampString = "510553629.097839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TweetDetailsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; CodePathTweeeeet.TweetDetailsViewController"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TweetDetailsViewController.swift"
+                  timestampString = "510553629.099303"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TweetDetailsViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; CodePathTweeeeet.TweetDetailsViewController"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TweetDetailsViewController.swift"
+                  timestampString = "510553629.100553"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TweetDetailsViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CodePathTweeeeet.TweetDetailsViewController&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TweetDetailsViewController.swift"
+                  timestampString = "510553629.101847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodePathTweeeeet.TweetDetailsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CodePathTweeeeet.TweetDetailsViewController&gt;"
+                  moduleName = "CodePathTweeeeet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sim/Documents/Practice_and_Git/CodePath/CodePathTweeeeet/CodePathTweeeeet/TweetDetailsViewController.swift"
+                  timestampString = "510553629.103075"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/TweetDetailsViewController.swift"
+            timestampString = "510563883.642775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodePathTweeeeet/ComposeTweetViewController.swift"
+            timestampString = "510562633.570295"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
