@@ -350,11 +350,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodePathTweeeeet/userTableViewCell.swift"
-            timestampString = "510587555.472505"
+            timestampString = "511205563.772897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "userTableViewCell"
             landmarkType = "3">
          </BreakpointContent>
@@ -366,11 +366,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodePathTweeeeet/userTableViewCell.swift"
-            timestampString = "510589710.985972"
+            timestampString = "511205563.772897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "userTableViewCell"
             landmarkType = "3">
          </BreakpointContent>

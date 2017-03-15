@@ -17,6 +17,7 @@ class userTableViewCell: UITableViewCell {
     @IBOutlet weak var userDescLabel: UILabel!
     @IBOutlet weak var followingCountLabel: UILabel!
     @IBOutlet weak var followersCountLabel: UILabel!
+    @IBOutlet weak var tweetsCountLabel: UILabel!
     
     var userDict: NSDictionary! {
         didSet{
@@ -35,10 +36,12 @@ class userTableViewCell: UITableViewCell {
             
             let followers = String(describing: userDict["followers_count"] as! Int)
             let following = String(describing: userDict["friends_count"] as! Int)
+            let tweets = String(describing: userDict["statuses_count"] as! Int)
             
             
             followingCountLabel.text =  "" + following
             followersCountLabel.text = "" + followers
+            tweetsCountLabel.text = "" + tweets
             
         }
     }
